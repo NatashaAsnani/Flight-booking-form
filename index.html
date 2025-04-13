@@ -13,9 +13,9 @@
 </head>
 <body>
     <div class="container-fluid">
-        <h1>SkyScanner</h1>
+        <h1 class="text-white py-3">SkyScanner</h1>
         <div class="row">
-            <div class="col first py-4">
+            <div class="col first py-2">
                 <button>
                     <i class="fas fa-plane"></i> Flights
                 </button>
@@ -26,103 +26,82 @@
                     <i class="fas fa-car"></i> Car hire
                 </button>
 
-                <h1 class="my-4">Millions of cheap flights. One simple search.</h1>
-                <a href="">
-                    <i class="fas fa-sync"></i> Create a multi-city route
+                <h1 class="my-4 text-white">Millions of cheap flights. One simple search.</h1>
+                <a href="" class="text-white">
+                    <i class="fas fa-sync text-white"></i> Create a multi-city route
                 </a>
             </div>
         </div>
-        <div class="row table1">
-            <div class="col-12">
-                <div class="table-responsive">
-                    <table class=" table-light">
-                        <thead>
-                            <tr>
-                                <th scope="col" class="p-2">From</th>
-                                <th scope="col">To</th>
-                                <th scope="col">Expected Date</th>
-                                <th scope="col">Number of Travellers</th>
-                                <th scope="col">Class</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">
-                                    <div class="dropdown">
-                                        <button class="btn btn-white text-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <i class='fa fa-map-marker icon'></i>
-                                        Bali, Indonesia
-                                        </button>
-                                    
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" href="#">Bali, Indonesia</a></li>
-                                        <li><a class="dropdown-item" href="#">Jakarta, Indonesia</a></li>
-                                        <li><a class="dropdown-item" href="#">Lahore, Pakistan</a></li>
-                                        <li><a class="dropdown-item" href="#">Dubai, UAE</a></li>
-                                        </ul>
-                                    </div>
-                                </th>
-                                <td>
-                                    <div class="dropdown">
-                                        <button class="btn btn-white text-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <i class='fa fa-map-marker icon'></i>
-                                            Bali, Indonesia
-                                        </button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                            <li><a class="dropdown-item" href="#">Bali, Indonesia</a></li>
-                                            <li><a class="dropdown-item" href="#">Jakarta, Indonesia</a></li>
-                                            <li><a class="dropdown-item" href="#">Lahore, Pakistan</a></li>
-                                            <li><a class="dropdown-item" href="#">Dubai, UAE</a></li>
-                                        </ul>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="dropdown">
-                                    <button class="btn btn-white text-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="fa fa-calendar icon"></i>
-                                    02-06-2020
-                                    </button>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="dropdown">
-                                        <button class="btn person btn-white text-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <i class='fa fa-user icon'></i>
-                                        02
-                                        </button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                            <li><a class="dropdown-item" href="#">3</a></li>
-                                            <li><a class="dropdown-item" href="#">4</a></li>
-                                            <li><a class="dropdown-item" href="#">More than 4</a></li>
-                                        </ul>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="dropdown">
-                                        <button class="btn btn-white text-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <i class='fa fa-phone icon'></i>
-                                            Economy
-                                        </button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                            <li><a class="dropdown-item" href="#">Business</a></li>
-                                            <li><a class="dropdown-item" href="#">Other</a></li>
-                                        </ul>
-                                    </div>
-                                </td>
-                                <!-- ✅ Search Button -->
-                                <td>
-                                    <div class="search">
-                                        <button class="btn flight btn-primary" type="button">
-                                            Search Flight
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+        <div class="row my-4 g-3 p-3 border rounded bg-light">
+            <div class="col-12 col-md-2">
+              <label class="form-label fw-bold">From</label>
+              <div class="dropdown">
+                <button class="btn btn-white text-dark dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                  <i class="fa fa-map-marker"></i> Bali, Indonesia
+                </button>
+                <ul class="dropdown-menu w-100">
+                  <li><a class="dropdown-item" href="#">Bali</a></li>
+                  <li><a class="dropdown-item" href="#">Jakarta</a></li>
+                  <li><a class="dropdown-item" href="#">Lahore</a></li>
+                  <li><a class="dropdown-item" href="#">Dubai</a></li>
+                </ul>
+              </div>
             </div>
-        </div>
+        
+            <div class="col-12 col-md-2">
+              <label class="form-label fw-bold">To</label>
+              <div class="dropdown">
+                <button class="btn btn-white text-dark dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                  <i class="fa fa-map-marker"></i> Jakarta
+                </button>
+                <ul class="dropdown-menu w-100">
+                  <li><a class="dropdown-item" href="#">Bali</a></li>
+                  <li><a class="dropdown-item" href="#">Jakarta</a></li>
+                  <li><a class="dropdown-item" href="#">Lahore</a></li>
+                  <li><a class="dropdown-item" href="#">Dubai</a></li>
+                </ul>
+              </div>
+            </div>
+        
+            <div class="col-12 col-md-2">
+              <label class="form-label fw-bold">Expected Date</label>
+              <button class="btn btn-white text-dark">
+                <i class="fa fa-calendar"></i> 02-06-2020
+              </button>
+            </div>
+        
+            <div class="col-12 col-md-2">
+              <label class="form-label fw-bold">No: of Travellers</label>
+              <div class="dropdown">
+                <button class="btn btn-white text-dark dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                  <i class="fa fa-user"></i> 2
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">3</a></li>
+                  <li><a class="dropdown-item" href="#">4</a></li>
+                  <li><a class="dropdown-item" href="#">More than 4</a></li>
+                </ul>
+              </div>
+            </div>
+        
+            <div class="col-12 col-md-2">
+              <label class="form-label fw-bold">Class</label>
+              <div class="dropdown">
+                <button class="btn btn-white text-dark dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                  <i class="fa fa-plane"></i> Economy
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Business</a></li>
+                  <li><a class="dropdown-item" href="#">Other</a></li>
+                </ul>
+              </div>
+            </div>
+        
+            <div class="col-12 col-md-2 d-grid align-items-end">
+              <button class="search btn-primary">Search Flight</button>
+            </div>
+          </div>
+          
     </div>
 </body>
 </html>
